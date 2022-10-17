@@ -55,10 +55,11 @@
 #contact p{
     font-size: 12px;
     color: white;
+    font-weight: 800;
 }
 
 #contact h2{
-    font-size: 32px;
+    font-size: 24px;
     text-align: center;
     color: white;
 }
@@ -84,7 +85,7 @@
 }
 
 #references h2{
-    font-size: 32px;
+    font-size: 24px;
     text-align: center;
     color: white;
 }
@@ -92,6 +93,7 @@
 #references p{
     font-size: 12px;
     color: white;
+    font-weight: 800;
 }
 
 .headline{
@@ -109,14 +111,22 @@ h2{
     font-family: 'Bebas Neue', sans-serif;
     color: steelblue;
     font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 0px;
+    margin-top: 3px;
 }
 
 h3{
     font-family: 'Work Sans', sans-serif;
     color: steelblue;
     font-weight: 800;
-    font-size: 28px;
+    font-size: 14px;
     text-transform: uppercase;
+}
+
+.subtitle{
+    border-top: 3px !important;
+    border-bottom: 3px !important;
 }
 
 .headline h1{
@@ -128,23 +138,28 @@ h3{
 
 p{
     font-family: 'Work Sans', monospace;
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 1.2;
 }
 
 li{
     font-family: 'Work Sans', monospace;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .headline h3{
     font-family: 'Work Sans', monospace;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     text-align: center;
 }
 
 section{
     margin: 20px;
+}
+
+.table{
+    font-size: 12px;
 }
 
 
@@ -349,7 +364,7 @@ section{
         <div class="columns">
             <div class="column headline">
                 <h1 class="title ">Vincent Matinde</h1>
-                <h3 class="subtitle "><i>Writer / Data Analyst / Software Developer</i></h3>
+                <h3 class="subtitle ">Writer / Data Analyst / Software Developer</h3>
             </div>
         </div>
         <div class="columns">
@@ -362,15 +377,15 @@ section{
     
         <div class="columns">
             <div class="column">
-                <h2 class="title ">Experience</h2>
+                <h2 class=" ">Experience</h2>
             </div>
         </div>
         
             <div class="column ">
-                <h3 class="subtitle "><strong>CIO.COM - Contributor</strong></h3>
+                <h3 class=""><strong>CIO.COM - Contributor</strong></h3>
                 <strong><p>Remote: 2021 - Present</p></strong>
                 <p>I correspond for the African column for CIO.com, a global technology and business outlet based in the United States. I have remotely
-                    worked for the company for over a year now, and have written multiple articles on various topics ranging from technology, business, and management.<br><br>
+                    worked for the company for close to 2 years, and have written multiple articles on various topics ranging from technology, business, and management.<br><br>
                     The following are some of my duties</p>
                 <ul class="list">
                     <li class="list-item">Writing articles on the African tech scene</li>
@@ -379,7 +394,7 @@ section{
                 </ul>
             </div>
             <div class="column ">
-                <h3 class="subtitle "><strong>ITWeb.Africa - Technology Reporter</strong></h3>
+                <h3 class=" "><strong>ITWeb.Africa - Technology Reporter</strong></h3>
                 <p><strong>Remote: 2013 - Present</strong></p>
                 <p>I work as a continent-wider correspondent and contributor for this South African-based digital publicaiton, in a remote capacity. For over 10 years, 
                     I have written hundreds of reports ranging from technology, business, government policies and changing business environment in Africa.<br><br>
@@ -392,7 +407,7 @@ section{
             </div>
 
             <div class="column ">
-                <h3 class="subtitle "><strong>Mergermarket - Financial Reporter</strong></h3>
+                <h3 class=" "><strong>Mergermarket - Financial Reporter</strong></h3>
                 <p><strong>Remote: 2018 - Present</strong></p>
                 <p>
                     As part of the African team, I am tasked in speaking to high-level C-Suit executives in Africa, to gain forward looking and 
@@ -409,19 +424,19 @@ section{
 
         <div class="columns">
             <div class="column">
-                <h2 class="title ">Skills</h2>
+                <h2 class=" ">Skills</h2>
             </div>
         </div>
 
         <div class="columns">
             <div class="column">
-                <h3 class="subtitle "><strong>Programming Languages</strong></h3>
+                <h3 class=" "><strong>Programming Languages</strong></h3>
                 <p>I am a self-taught programmer with farmiliarity with Python programming language. With Pandas, I can 
                     clean, gleam insights, manipulate data and create visualizations. I have also worked with SQL and SQLAlchemy in reading and updating databases.
-                     I have also worked with JavaScript, HTML, CSS. I have experience with the Django and Flask web frameworks.</p>
+                     </p>
                 </p>
 
-                <table class="table is-fullwidth">
+                <table class="table is-fullwidth is-small">
                     <thead>
                         <tr>
                             <th>Language/Competency</th>
@@ -458,7 +473,7 @@ section{
                             <td>Code management</td>
                         </tr>
                     </tbody>
-                </table> <br>
+                </table>
             </div>
         </div>  
    
@@ -466,12 +481,12 @@ section{
    
         <div class="columns">
             <div class="column">
-                <h2 class="title ">Education</h2>
+                <h2 class=" ">Education</h2>
             </div>
         </div>
         <div class="columns">
             <div class="column ">
-                <h3 class="subtitle "><strong>Daystar University</strong></h3>
+                <h3 class=" "><strong>Daystar University</strong></h3>
                 <p><strong>2002 - 2004</strong></p>
                 <p>I attained a Diploma in Communication, including print and electronic media, graphic desing and audio production. </p>
                 
@@ -480,28 +495,21 @@ section{
 
         <div class="columns">
             <div class="column">
-                <h3 class="subtitle "><strong>Datacamp Courses</strong></h3>
+                <h3 class=" "><strong>Datacamp Courses</strong></h3>
                 <strong><p>Python Fundamentals - 2022</p></strong>
                 <P>The Python Programming from DataCamp is a 4 module program enabling learners to understand general Python programming and 
                     how to scrape, clean, and analyze data. The course also covers data visualization with Matplotlib and Pandas. <a target="_blank" href="https://www.datacamp.com/statement-of-accomplishment/track/4f5010f9f5ecbdf19d6dbc39e538bc54ffbc2ac4">[Link to Certificate]</a>
                 </P><br>
                 <strong><p>Python Programming - 2022</p></strong>
                 <P>The Python Data Science Toolbox from DataCamp is a 6 module program enabling learners to understand the basics of Python programming 
-                    and how to use functions, scope, and modules to write more efficient code.<a href="">[Link to Certificate]</a></P><br>
-                    
-                <strong><p>Power BI Fundamentals - 2022</p></strong>
-                <P>The Python Data Science Toolbox from DataCamp is a 6 module program enabling learners to understand the basics of Python programming 
-                    and how to use functions, scope, and modules to write more efficient code.
-
-
-            </div><br>
-            
+                    and how to use functions, scope, and modules to write more efficient code.<a href="">[Link to Certificate]</a></P>
+            </div>
         </div>
         
 
         <div class="columns">
             <div class="column">
-                <h3 class="subtitle "><strong>EDX Courses</strong></h3>
+                <h3 class=" "><strong>EDX Courses</strong></h3>
                 <p><strong>Introduction to Programming using Python - 2016</strong></p>
                 <p>This introductory course began my journey into programming and I was able to pass the course. 
                     <a href="https://courses.edx.org/certificates/809bf160924f431d91ddacbc0cc3476f" target="_blank">[Link to Certificate]</a></p>
@@ -510,7 +518,7 @@ section{
 
         <div class="columns">
             <div class="column">
-                <h3 class="subtitle "><strong>Coursera Courses</strong></h3>
+                <h3 class=" "><strong>Coursera Courses</strong></h3>
                 <p><strong>Meta's Backend Engineering Professional Course - Ongoing</strong></p>
                 <p>This is a fully fledged software engineering course focussing on the use of Python and web frameworks such as Django and Django Rest Framework </p>
             </div>
