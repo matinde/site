@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Vincent Matinde - Resume</title>
+
+    <!--Bulma-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Bebas+Neue&family=Work+Sans&display=swap" rel="stylesheet">
+    <script src="js/pagedjs.js"></script>
+
+    <style>
+
+
+@media print {
+    @page:first {
+        size: A4 portrait;
+        margin: 5mm 10mm 15mm 55mm;
+        
+        @left-top {
+            content: element(contactRunning);
+        }
+
+        @left-middle{
+            content: element(referencesRunning);
+        }
+
+    }
+
+    @page {
+        size: A4 portrait;
+        margin: 15mm 10mm 15mm 55mm;
+
+        @bottom-right-corner {
+            content: counter(page);
+    }
+
+    }
+
+    
+    
+}
+ 
+#contact{
+    position: running(contactRunning);
+    margin-right: 10px;
+    padding: 10px;
+    
+}
+
+#contact p{
+    font-size: 12px;
+    color: white;
+}
+
+#contact h2{
+    font-size: 32px;
+    text-align: center;
+    color: white;
+}
+
+#contact a{
+    color: white;
+}
+
+
+.pagedjs_margin-left{
+    background-color: steelblue;
+    margin-top: -80px;
+    height: 1200px;
+}
+
+.contact{
+    margin-top: 100px;
+}
+
+#references{
+    position: running(referencesRunning);
+    color: white;
+}
+
+#references h2{
+    font-size: 32px;
+    text-align: center;
+    color: white;
+}
+
+#references p{
+    font-size: 12px;
+    color: white;
+}
+
+.headline{
+    margin: 5px;
+    border: steelblue solid 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: lightgrey;
+}
+
+h2{
+    border-bottom: #cfcfcf solid 3px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: steelblue;
+    font-weight: 800;
+}
+
+h3{
+    font-family: 'Work Sans', sans-serif;
+    color: steelblue;
+    font-weight: 800;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.headline h1{
+    font-family: 'Bebas Neue', sans-serif;
+    color: steelblue;
+    font-size: 34px;
+    text-align: center;
+}
+
+p{
+    font-family: 'Work Sans', monospace;
+    font-size: 14px;
+}
+
+li{
+    font-family: 'Work Sans', monospace;
+    font-size: 14px;
+}
+
+.headline h3{
+    font-family: 'Work Sans', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+section{
+    margin: 20px;
+}
+
+
+
+/* CSS for Paged.js interface – v0.2 */
+
+/* Change the look */
+:root {
+    --color-background: whitesmoke;
+    --color-pageSheet: #cfcfcf;
+    --color-pageBox: violet;
+    --color-paper: white;
+    --color-marginBox: transparent;
+    --pagedjs-crop-color: #000;
+    --pagedjs-crop-stroke: 1px;
+}
+
+.pagedjs_marks-crop{
+    z-index: 999999999999;
+}
+
+/* To define how the book look on the screen: */
+@media screen {
+    body {
+        background-color: var(--color-background);
+    }
+
+    .pagedjs_pages {
+        display: flex;
+        width: calc(var(--pagedjs-width) * 2);
+        flex: 0;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .pagedjs_page {
+        background-color: var(--color-paper);
+        box-shadow: 0 0 0 1px var(--color-pageSheet);
+        margin: 0;
+        flex-shrink: 0;
+        flex-grow: 0;
+        margin-top: 10mm;
+    }
+
+    .pagedjs_first_page {
+        margin-left: var(--pagedjs-width);
+    }
+
+    .pagedjs_page:last-of-type {
+        margin-bottom: 10mm;
+    }
+
+    .pagedjs_pagebox{
+        box-shadow: 0 0 0 1px var(--color-pageBox);
+    }
+
+    .pagedjs_left_page{
+        z-index: 20;
+        width: calc(var(--pagedjs-bleed-left) + var(--pagedjs-pagebox-width))!important;
+    }
+
+    .pagedjs_left_page .pagedjs_bleed-right .pagedjs_marks-crop {
+        border-color: transparent;
+    }
+    
+    .pagedjs_left_page .pagedjs_bleed-right .pagedjs_marks-middle{
+        width: 0;
+    } 
+
+    .pagedjs_right_page{
+        z-index: 10;
+        position: relative;
+        left: calc(var(--pagedjs-bleed-left)*-1);
+    }
+
+    /* show the margin-box */
+
+    .pagedjs_margin-top-left-corner-holder,
+    .pagedjs_margin-top,
+    .pagedjs_margin-top-left,
+    .pagedjs_margin-top-center,
+    .pagedjs_margin-top-right,
+    .pagedjs_margin-top-right-corner-holder,
+    .pagedjs_margin-bottom-left-corner-holder,
+    .pagedjs_margin-bottom,
+    .pagedjs_margin-bottom-left,
+    .pagedjs_margin-bottom-center,
+    .pagedjs_margin-bottom-right,
+    .pagedjs_margin-bottom-right-corner-holder,
+    .pagedjs_margin-right,
+    .pagedjs_margin-right-top,
+    .pagedjs_margin-right-middle,
+    .pagedjs_margin-right-bottom,
+    .pagedjs_margin-left,
+    .pagedjs_margin-left-top,
+    .pagedjs_margin-left-middle,
+    .pagedjs_margin-left-bottom {
+        box-shadow: 0 0 0 1px inset var(--color-marginBox);
+    }
+
+    /* uncomment this part for recto/verso book : ------------------------------------ */
+
+        
+    .pagedjs_pages {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .pagedjs_first_page {
+        margin-left: 0;
+    }
+
+    .pagedjs_page {
+        margin: 0 auto;
+        margin-top: 10mm;
+    } 
+
+    .pagedjs_left_page{
+        width: calc(var(--pagedjs-bleed-left) + var(--pagedjs-pagebox-width) + var(--pagedjs-bleed-left))!important;
+    }
+
+    .pagedjs_left_page .pagedjs_bleed-right .pagedjs_marks-crop{
+        border-color: var(--pagedjs-crop-color);
+    }
+
+    .pagedjs_left_page .pagedjs_bleed-right .pagedjs_marks-middle{
+        width: var(--pagedjs-cross-size)!important;
+    } 
+
+    .pagedjs_right_page{
+        left: 0; 
+    } 
+   
+    
+
+    /*--------------------------------------------------------------------------------------*/
+
+
+
+    /* uncomment this par to see the baseline : -------------------------------------------*/
+
+    
+    /* .pagedjs_pagebox {
+        --pagedjs-baseline: 22px;
+        --pagedjs-baseline-position: 5px;
+        --pagedjs-baseline-color: cyan;
+        background: linear-gradient(transparent 0%, transparent calc(var(--pagedjs-baseline) - 1px), var(--pagedjs-baseline-color) calc(var(--pagedjs-baseline) - 1px), var(--pagedjs-baseline-color) var(--pagedjs-baseline)), transparent;
+        background-size: 100% var(--pagedjs-baseline);
+        background-repeat: repeat-y;
+        background-position-y: var(--pagedjs-baseline-position);
+    }  */
+   
+
+    /*--------------------------------------------------------------------------------------*/
+
+   
+}
+
+
+</style>
+</head>
+
+
+<body class="">
+
+    <section>
+
+        <!--Running elements should be in the HTML file as below.-->
+        <div id="contact">
+            <div class="">
+                <div class="contact">
+                    <h2 class="title">Contact</h2>
+                    <p>Phone: +254 722 000 000</p>
+                    <p>Email: vjmatinde@gmail.com</p>
+                    <p>Website: <a href="https://matinde.com" target="_blank">www.matinde.com</a></p><br>
+                    <p>Address: P. O. Box 2885, 00100, Nairobi Kenya</p><br>
+    
+                </div>
+            </div>
+        </div>
+            
+            <div id="references">
+                
+                <h2 class="title">References</h2>
+                <p>Mr. John Doe</p>
+                <p>Phone: +254 722 000 000</p>
+                <p>Email: vjmatinde@gmail.com</p>
+                <p>Address: P. O. Box 2885, 00100, Nairobi Kenya</p><br>
+                <p>Mr. John Doe</p>
+                <p>Phone: +254 722 000 000</p>
+                <p>Email: vjmatinde@gmail.com</p>
+                <p>Address: P. O. Box 2885, 00100, Nairobi Kenya</p><br>
+                <p>Mr. John Doe</p>
+                <p>Phone: +254 722 000 000</p>
+                <p>Email: vjmatinde@gmail.com</p>
+                <p>Address: P. O. Box 2885, 00100, Nairobi Kenya</p><br>
+            </div>
+
+
+
+        <div class="columns">
+            <div class="column headline">
+                <h1 class="title ">Vincent Matinde</h1>
+                <h3 class="subtitle "><i>Writer / Data Analyst / Software Developer</i></h3>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column ">
+                <p>My career revolves around technology and business journalism, and also combining it with software engineering skils majorly in Python programming language.</p>
+            </div>
+        </div>
+   
+
+    
+        <div class="columns">
+            <div class="column">
+                <h2 class="title ">Experience</h2>
+            </div>
+        </div>
+        
+            <div class="column ">
+                <h3 class="subtitle "><strong>CIO.COM - Contributor</strong></h3>
+                <strong><p>Remote: 2021 - Present</p></strong>
+                <p>I correspond for the African column for CIO.com, a global technology and business outlet based in the United States. I have remotely
+                    worked for the company for over a year now, and have written multiple articles on various topics ranging from technology, business, and management.<br><br>
+                    The following are some of my duties</p>
+                <ul class="list">
+                    <li class="list-item">Writing articles on the African tech scene</li>
+                    <li class="list-item">Interviewing tech leaders in Africa</li>
+                    <li class="list-item">Researching and writing articles on the African tech scene</li>
+                </ul>
+            </div>
+            <div class="column ">
+                <h3 class="subtitle "><strong>ITWeb.Africa - Technology Reporter</strong></h3>
+                <p><strong>Remote: 2013 - Present</strong></p>
+                <p>I work as a continent-wider correspondent and contributor for this South African-based digital publicaiton, in a remote capacity. For over 10 years, 
+                    I have written hundreds of reports ranging from technology, business, government policies and changing business environment in Africa.<br><br>
+                 Some of my duties are:</p>
+                <ul class="list">
+                    <li class="list-item">Originate article and feature ideas</li>
+                    <li class="list-item">Interview technology experts and formulate interesting technology and business news</li>
+                    <li class="list-item">Attend events where original articles can be generated</li>
+                </ul>
+            </div>
+
+            <div class="column ">
+                <h3 class="subtitle "><strong>Mergermarket - Financial Reporter</strong></h3>
+                <p><strong>Remote: 2018 - Present</strong></p>
+                <p>
+                    As part of the African team, I am tasked in speaking to high-level C-Suit executives in Africa, to gain forward looking and 
+                    actionable intelligence on their company's business prospects including: M&A, IPO, and other capital raising activities.<br><br>
+                    Some of my duties are:
+                </p>
+                 
+                <ul class="list">
+                    <li class="list-item">Originate article and feature ideas</li>
+                    <li class="list-item">Interview technology experts and formulate interesting technology and business news</li>
+                    <li class="list-item">Attend events where original articles can be generated</li>
+                </ul>
+            </div><br>
+
+        <div class="columns">
+            <div class="column">
+                <h2 class="title ">Skills</h2>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <h3 class="subtitle "><strong>Programming Languages</strong></h3>
+                <p>I am a self-taught programmer with farmiliarity with Python programming language. With Pandas, I can 
+                    clean, gleam insights, manipulate data and create visualizations. I have also worked with SQL and SQLAlchemy in reading and updating databases.
+                     I have also worked with JavaScript, HTML, CSS. I have experience with the Django and Flask web frameworks.</p>
+                </p>
+
+                <table class="table is-fullwidth">
+                    <thead>
+                        <tr>
+                            <th>Language/Competency</th>
+                            <th>Frameworks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Python</td>
+                            <td>Flask / Django</td>
+                        </tr>
+                        <tr>
+                            <td>Python Data Analytics</td>
+                            <td>Pandas / Plotly / Bokeh / Matplotlib / Streamlit</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Bootstrap / Bulma / Tailwind</td>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                            <td>SQLAlchemy</td>
+                        </tr>
+                        <tr>
+                            <td>Power BI</td>
+                            <td>Visualization</td>
+                        </tr>
+                        <tr>
+                            <td>Tableau</td>
+                            <td>Visualization</td>
+                        </tr>
+                       
+                    </tbody>
+                </table> <br>
+            </div>
+        </div>  
+   
+
+   
+        <div class="columns">
+            <div class="column">
+                <h2 class="title ">Education</h2>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column ">
+                <h3 class="subtitle "><strong>Daystar University</strong></h3>
+                <p><strong>2002 - 2004</strong></p>
+                <p>I attained a Diploma in Communication, including print and electronic media, graphic desing and audio production. </p>
+                
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <h3 class="subtitle "><strong>Datacamp Courses</strong></h3>
+                <strong><p>Python Fundamentals - 2022</p></strong>
+                <P>The Python Programming from DataCamp is a 4 module program enabling learners to understand general Python programming and 
+                    how to scrape, clean, and analyze data. The course also covers data visualization with Matplotlib and Pandas. <a target="_blank" href="https://www.datacamp.com/statement-of-accomplishment/track/4f5010f9f5ecbdf19d6dbc39e538bc54ffbc2ac4">[Link to Certificate]</a>
+                </P><br>
+                <strong><p>Python Programming - 2022</p></strong>
+                <P>The Python Data Science Toolbox from DataCamp is a 6 module program enabling learners to understand the basics of Python programming 
+                    and how to use functions, scope, and modules to write more efficient code.<a href="">[Link to Certificate]</a></P><br>
+                    
+                <strong><p>Power BI Fundamentals - 2022</p></strong>
+                <P>The Python Data Science Toolbox from DataCamp is a 6 module program enabling learners to understand the basics of Python programming 
+                    and how to use functions, scope, and modules to write more efficient code.
+
+
+            </div><br>
+            
+        </div>
+        
+
+        <div class="columns">
+            <div class="column">
+                <h3 class="subtitle "><strong>EDX Courses</strong></h3>
+                <p><strong>Introduction to Programming using Python - 2016</strong></p>
+                <p>This introductory course began my journey into programming and I was able to pass the course. 
+                    <a href="https://courses.edx.org/certificates/809bf160924f431d91ddacbc0cc3476f" target="_blank">[Link to Certificate]</a></p>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <h3 class="subtitle "><strong>Coursera Courses</strong></h3>
+                <p><strong>Meta's Backend Engineering Professional Course - Ongoing</strong></p>
+                <p>This is a fully fledged software engineering course focussing on the use of Python and web frameworks such as Django and Django Rest Framework </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

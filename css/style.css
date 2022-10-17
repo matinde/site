@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Thunder;
+    src: url(./fonts/thunder/Thunder-ExtraBoldHC.ttf);
+}
+
+@font-face {
+    font-family: Roboto Mono;
+    src: url(./fonts/roboto/RobotoMono-Bold.ttf);
+}
+
+body{
+    background-color: #FDFD96;
+    color: steelblue;
+    font-size: 24px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1{
+    color: steelblue;
+    font-family: 'Thunder';
+    font-size: 112px;
+    opacity: 1;
+}
+
+.header{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+p{
+    font-family: 'Roboto Mono';
+    font-size: 24px;
+}
+
+a{
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    color: ;
+}
+
+a:hover{
+    color: white;
+}
+
+.summary{
+    font-size: 24px;
+    opacity:0;
+}
+
+.menu a{
+    background-color: black;
+    color: steelblue;
+    font-family: 'Roboto Mono';
+    font-size: 24px;
+    border: 2px solid steelblue;
+    border-radius: 0px;
+    padding: 10px;
+    box-shadow: 5px 5px steelblue;
+}
+
+.socials p{
+    background-color: black;
+    color: steelblue;
+    font-family: 'Roboto Mono';
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.menu a:hover{
+    background-color: steelblue;
+    color: black;
+    cursor: pointer;
+    box-shadow: 5px 5px black;
+}
+
+.menu{
+    margin-top: 50px;
+    opacity: 0;
+}
+
+.socials{
+    margin-top: 50px;
+    opacity: 0;
+}
+
